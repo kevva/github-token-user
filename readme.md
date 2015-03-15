@@ -19,7 +19,7 @@ githubTokenUser('523ef6911917', function (err, data) {
 	}
 
 	console.log(data);
-	//=> [{login: johndoe, id: '1', ...}, ...]
+	//=> {login: johndoe, id: '1', ...}
 });
 ```
 
