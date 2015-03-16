@@ -2,11 +2,13 @@
 
 > Get the Github user from a token
 
+
 ## Install
 
 ```bash
 $ npm install --save github-token-user
 ```
+
 
 ## Usage
 
@@ -14,10 +16,6 @@ $ npm install --save github-token-user
 var githubTokenUser = require('github-token-user');
 
 githubTokenUser('523ef6911917', function (err, data) {
-	if (err) {
-		throw err;
-	}
-
 	console.log(data);
 	//=> {login: johndoe, id: '1', ...}
 });
@@ -25,19 +23,25 @@ githubTokenUser('523ef6911917', function (err, data) {
 
 ## API
 
-### githubTokenUser(token, cb)
+### githubTokenUser(token, callback)
 
 #### token
 
+*Required*  
 Type: `string`
 
 Token to get the user from.
 
-#### cb(err, data)
+#### callback(err, data)
 
 Type: `function`
 
-`data` contains an object with the user properties.
+##### data
+
+Type: `object`
+
+Contains an object with the user properties.
+
 
 ## CLI
 
@@ -48,10 +52,11 @@ $ npm install --global github-token-user
 ```sh
 $ github-token-user --help
 
-Usage
-  $ github-token-user 523ef6911917
-  johndoe
+  Usage
+    $ github-token-user 523ef6911917
+    johndoe
 ```
+
 
 ## License
 
