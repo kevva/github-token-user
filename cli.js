@@ -12,6 +12,11 @@ var cli = meow({
 	].join('\n')
 });
 
+if (!cli.input[0]) {
+	console.error('Token required');
+	process.exit(1);
+}
+
 githubTokenUser(cli.input[0], function (err, data) {
 	if (err) {
 		console.error(err.message);
