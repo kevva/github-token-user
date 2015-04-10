@@ -1,7 +1,7 @@
 'use strict';
 
-var githubTokenUser = require('./');
 var test = require('ava');
+var githubTokenUser = require('./');
 
 test(function (t) {
 	t.plan(2);
@@ -9,6 +9,6 @@ test(function (t) {
 
 	githubTokenUser(token, function (err, data) {
 		t.assert(!err, err);
-		t.assert(data.login === 'kevva');
+		t.assert(data.login === 'kevva', data.login);
 	});
 });

@@ -5,7 +5,7 @@
 
 ## Install
 
-```bash
+```
 $ npm install --save github-token-user
 ```
 
@@ -45,11 +45,11 @@ Contains an object with the user properties.
 
 ## CLI
 
-```sh
+```
 $ npm install --global github-token-user
 ```
 
-```sh
+```
 $ github-token-user --help
 
   Usage
