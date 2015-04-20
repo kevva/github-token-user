@@ -1,24 +1,18 @@
 'use strict';
 
-var got = require('got');
+var ghGot = require('gh-got');
 
 module.exports = function (token, cb) {
 	if (typeof token !== 'string') {
 		throw new Error('Token required');
 	}
 
-	var headers = {
-		Accept: 'application/vnd.github.v3+json',
-		Authorization: 'token ' + token,
-		'User-Agent': 'https://github.com/kevva/github-token-user'
-	};
-
-	got('https://api.github.com/user', {headers: headers}, function (err, data) {
+	ghGot('user', {token: token}, function (err, data) {
 		if (err) {
 			cb(err);
 			return;
 		}
 
-		cb(null, JSON.parse(data));
+		cb(null, data);
 	});
 };
