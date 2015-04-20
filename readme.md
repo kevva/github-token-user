@@ -1,4 +1,4 @@
-# github-token-user [![Build Status](http://img.shields.io/travis/kevva/github-token-user.svg?style=flat)](https://travis-ci.org/kevva/github-token-user)
+# github-token-user [![Build Status](https://travis-ci.org/kevva/github-token-user.svg?branch=master)](https://travis-ci.org/kevva/github-token-user)
 
 > Get the GitHub user from a token
 
