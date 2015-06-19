@@ -1,15 +1,14 @@
 #!/usr/bin/env node
 'use strict';
-
 var meow = require('meow');
 var githubTokenUser = require('./');
 
 var cli = meow({
 	help: [
-		'Usage',
+		'Example',
 		'  $ github-token-user 523ef6911917',
 		'  johndoe'
-	].join('\n')
+	]
 });
 
 if (!cli.input[0]) {
