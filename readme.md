@@ -23,7 +23,7 @@ githubTokenUser('523ef6911917').then(data => {
 
 ## API
 
-### githubTokenUser(token, callback)
+### githubTokenUser(token)
 
 Returns a promise for an `object` with the user.
 
