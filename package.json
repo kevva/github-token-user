@@ -1,6 +1,6 @@
 {
   "name": "github-token-user",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Get the Github user from a token",
   "license": "MIT",
   "repository": "kevva/github-token-user",
