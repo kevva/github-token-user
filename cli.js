@@ -16,11 +16,6 @@ if (!cli.input[0]) {
 	process.exit(1);
 }
 
-githubTokenUser(cli.input[0], function (err, data) {
-	if (err) {
-		console.error(err.message);
-		process.exit(1);
-	}
-
+githubTokenUser(cli.input[0]).then(function (data) {
 	console.log(data.login);
 });

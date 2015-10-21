@@ -13,9 +13,9 @@ $ npm install --save github-token-user
 ## Usage
 
 ```js
-var githubTokenUser = require('github-token-user');
+const githubTokenUser = require('github-token-user');
 
-githubTokenUser('523ef6911917', function (err, data) {
+githubTokenUser('523ef6911917').then(data => {
 	console.log(data);
 	//=> {login: johndoe, id: '1', ...}
 });
@@ -25,22 +25,14 @@ githubTokenUser('523ef6911917', function (err, data) {
 
 ### githubTokenUser(token, callback)
 
+Returns a promise for an `object` with the user.
+
 #### token
 
 *Required*  
 Type: `string`
 
 Token to get the user from.
-
-#### callback(err, data)
-
-Type: `function`
-
-##### data
-
-Type: `object`
-
-Contains an object with the user properties.
 
 
 ## CLI
