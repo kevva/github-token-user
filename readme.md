@@ -29,7 +29,6 @@ Returns a promise for an `object` with the user.
 
 #### token
 
-*Required*<br>
 Type: `string`
 
 Token to get the user from.
