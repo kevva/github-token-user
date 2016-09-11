@@ -1,21 +1,19 @@
 #!/usr/bin/env node
 'use strict';
-var meow = require('meow');
-var githubTokenUser = require('./');
+const meow = require('meow');
+const githubTokenUser = require('./');
 
-var cli = meow({
-	help: [
-		'Example',
-		'  $ github-token-user 523ef6911917',
-		'  johndoe'
-	]
-});
+const cli = meow(`
+	Example
+	  $ github-token-user 523ef6911917',
+	  johndoe
+`);
 
-if (!cli.input[0]) {
+if (cli.input.length === 0) {
 	console.error('Token required');
 	process.exit(1);
 }
 
-githubTokenUser(cli.input[0]).then(function (data) {
+githubTokenUser(cli.input[0]).then(data => {
 	console.log(data.login);
 });

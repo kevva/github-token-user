@@ -1,13 +1,13 @@
 'use strict';
-var ghGot = require('gh-got');
-var Promise = require('pinkie-promise');
+const ghGot = require('gh-got');
 
-module.exports = function (token) {
+module.exports = token => {
 	if (typeof token !== 'string') {
 		return Promise.reject(new TypeError('Expected a string'));
 	}
 
-	return ghGot('user', {token: token}).then(function (res) {
-		return res.body;
-	});
+	return ghGot('user', {
+		json: true,
+		token
+	}).then(res => res.body);
 };

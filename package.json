@@ -10,7 +10,7 @@
     "url": "github.com/kevva"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "bin": "cli.js",
   "scripts": {
@@ -28,12 +28,14 @@
     "user"
   ],
   "dependencies": {
-    "gh-got": "^2.1.0",
-    "meow": "^3.3.0",
-    "pinkie-promise": "^1.0.0"
+    "gh-got": "^5.0.0",
+    "meow": "^3.3.0"
   },
   "devDependencies": {
     "ava": "*",
     "xo": "*"
+  },
+  "xo": {
+    "esnext": true
   }
 }
