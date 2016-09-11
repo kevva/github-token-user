@@ -12,24 +12,20 @@
   "engines": {
     "node": ">=4"
   },
-  "bin": "cli.js",
   "scripts": {
     "test": "xo && ava"
   },
   "files": [
-    "index.js",
-    "cli.js"
+    "index.js"
   ],
   "keywords": [
     "api",
-    "cli",
     "github",
     "token",
     "user"
   ],
   "dependencies": {
-    "gh-got": "^5.0.0",
-    "meow": "^3.3.0"
+    "gh-got": "^5.0.0"
   },
   "devDependencies": {
     "ava": "*",

@@ -35,19 +35,9 @@ Type: `string`
 Token to get the user from.
 
 
-## CLI
+## Related
 
-```
-$ npm install --global github-token-user
-```
-
-```
-$ github-token-user --help
-
-  Usage
-    $ github-token-user 523ef6911917
-    johndoe
-```
+* [github-token-user-cli](https://github.com/kevva/github-token-user-cli) - CLI for this module
 
 
 ## License
